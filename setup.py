@@ -15,7 +15,7 @@ with open('README.md') as _f:
 _VERSION = '0.1'
 
 setup(
-    name='llama-cpp-wrapper', # TODO: rename. 
+    name='llama_cpp_wrapper', # TODO: rename. 
     version=_VERSION,
     description='Wrapper for llama cpp cuz i was lazy',
     long_description=_README_MD,
