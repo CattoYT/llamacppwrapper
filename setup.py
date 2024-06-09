@@ -25,7 +25,7 @@ setup(
     ],
     url='https://github.com/..../....',  # TODO.
     download_url='https://github.com/.../.../tarball/{}'.format(_VERSION),  # TODO.
-    packages=find_packages(include=['project*']),  # TODO.
+    packages=["llama-cpp-python"],  # TODO.
     test_suite="testing",
     include_package_data=True,
 )
