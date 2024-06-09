@@ -29,7 +29,7 @@ setup(
     author_email='guillaume.chevalier@neuraxio.com',  # TODO.
     packages=find_packages(include=['project*']),  # TODO.
     test_suite="testing",
-    setup_requires=["llama-cpp-python"],
+    setup_requires=["llama_cpp_wrapper"],
 
     include_package_data=True,
     license='TODO',  # TODO: set your license string. 
