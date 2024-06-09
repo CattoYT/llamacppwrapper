@@ -25,7 +25,7 @@ setup(
     download_url='https://github.com/.../.../tarball/{}'.format(_VERSION),  # Replace with your repository URL.
     packages=find_packages(),  # Automatically find packages.
     install_requires=[
-        'llama_cpp', 
+        'llama-cpp-python', 
     ],
     test_suite="tests",
     include_package_data=True,
