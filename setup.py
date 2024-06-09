@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-
+import subprocess
 with open('README.md', 'r', encoding='utf-8') as _f:
     _README_MD = _f.read()
 
