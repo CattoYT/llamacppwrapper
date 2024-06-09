@@ -4,6 +4,10 @@ with open('README.md', 'r', encoding='utf-8') as _f:
     _README_MD = _f.read()
 
 _VERSION = '0.1.0'
+try:
+    import llama_cpp
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "llama-cpp-python", "--extra-index-url", "https://abetlen.github.io/llama-cpp-python/whl/cu122"])
 
 setup(
     name='llama_cpp_wrapper',
