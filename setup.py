@@ -1,32 +1,29 @@
-"""
-This files originate from the "New-Empty-Python-Project-Base" template:
-    https://github.com/Neuraxio/New-Empty-Python-Project-Base 
-Created by Guillaume Chevalier at Neuraxio:
-    https://github.com/Neuraxio 
-    https://github.com/guillaume-chevalier 
-License: CC0-1.0 (Public Domain)
-"""
-
 from setuptools import setup, find_packages
 
-with open('README.md') as _f:
+with open('README.md', 'r', encoding='utf-8') as _f:
     _README_MD = _f.read()
 
-_VERSION = '0.1'
+_VERSION = '0.1.0'
 
 setup(
-    name='llama_cpp_wrapper', # TODO: rename. 
+    name='llama_cpp_wrapper',
     version=_VERSION,
-    description='Wrapper for llama cpp cuz i was lazy',
+    description='Wrapper for llama cpp cuz I was lazy',
     long_description=_README_MD,
+    long_description_content_type='text/markdown',
     classifiers=[
-        # TODO: typing.
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
         "Typing :: Typed"
     ],
-    url='https://github.com/..../....',  # TODO.
-    download_url='https://github.com/.../.../tarball/{}'.format(_VERSION),  # TODO.
-    packages=["llama-cpp-python"],  # TODO.
-    test_suite="testing",
+    url='https://github.com/CattoYT/llamacppwrapper',  # Replace with your repository URL.
+    download_url='https://github.com/.../.../tarball/{}'.format(_VERSION),  # Replace with your repository URL.
+    packages=find_packages(),  # Automatically find packages.
+    install_requires=[
+        'llama_cpp', 
+    ],
+    test_suite="tests",
     include_package_data=True,
+    python_requires='>=3.6',
 )
-
