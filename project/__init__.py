@@ -1,1 +1,1 @@
-from .model import llamaLLM
+from .wrapper import llamaLLM
