@@ -15,9 +15,9 @@ with open('README.md') as _f:
 _VERSION = '0.1'
 
 setup(
-    name='project', # TODO: rename. 
+    name='llama-cpp-wrapper', # TODO: rename. 
     version=_VERSION,
-    description='An empty project base.',
+    description='Wrapper for llama cpp cuz i was lazy',
     long_description=_README_MD,
     classifiers=[
         # TODO: typing.
@@ -29,9 +29,8 @@ setup(
     author_email='guillaume.chevalier@neuraxio.com',  # TODO.
     packages=find_packages(include=['project*']),  # TODO.
     test_suite="testing",
-    setup_requires=["pytest-runner"],
-    tests_require=["pytest", "pytest-cov"],
-    install_requires=["neuraxle"],
+    setup_requires=["llama-cpp-python"],
+
     include_package_data=True,
     license='TODO',  # TODO: set your license string. 
     keywords='empty project TODO keywords'
