@@ -1,3 +1,4 @@
+from llama_cpp import Llama
 class llamaLLM:
     def __init__(self, systemprompt, model="bartowski/Meta-Llama-3-8B-Instruct-GGUF", filename="Meta-Llama-3-8B-Instruct-Q4_K_M.gguf"):
         
