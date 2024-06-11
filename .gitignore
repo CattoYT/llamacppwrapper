@@ -97,11 +97,11 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
+# Spyder llama_cpp_wrapper settings
 .spyderproject
 .spyproject
 
-# Rope project settings
+# Rope llama_cpp_wrapper settings
 .ropeproject
 
 # mkdocs documentation
